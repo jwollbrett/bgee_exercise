@@ -15,7 +15,7 @@ The aim of this exercise is to retrieve homologous structures: i) with a develop
   * extract the relations with the object property "develops_from" (see http://purl.obolibrary.org/obo/RO_0002202), **or any of its sub-properties**, outgoing from anatomical entities present in the similarity annotation file 
   * similarly, extract the relations with the object property "part_of" (see http://purl.obolibrary.org/obo/BFO_0000050), **or any of its sub-properties**
 
-(see in owltools the methods `owltools.graph.OWLGraphWrapperEdgesExtended.getOutgoingEdgesWithGCI(OWLObject)`, `owltools.graph.OWLGraphEdge.getTarget()`, `owltools.graph.OWLGraphEdge.getSingleQuantifiedProperty()`, and `owltools.graph.OWLGraphEdge.getGCIFiller()`; see OWLAPI documentation for related classes)
+(see in owltools the methods `owltools.graph.OWLGraphWrapperExtended.getOWLClassByIdentifier(String)`, `owltools.graph.OWLGraphWrapperEdgesExtended.getOutgoingEdgesWithGCI(OWLObject)`, `owltools.graph.OWLGraphEdge.getTarget()`, `owltools.graph.OWLGraphEdge.getSingleQuantifiedProperty()`, and `owltools.graph.OWLGraphEdge.getGCIFiller()`; see OWLAPI documentation for related classes)
 
 * Identify homologous structures having ancestors through "develops_from" object properties (or any of its subproperties) that vary between species, if any. 
 * Identify homologous structures having ancestors through "part_of" object properties (or any of its subproperties) that vary between species, if any.
