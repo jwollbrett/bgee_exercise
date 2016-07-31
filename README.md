@@ -20,4 +20,6 @@ The aim of this exercise is to retrieve homologous structures: i) with a develop
 * Identify homologous structures having ancestors through "develops_from" object properties (or any of its subproperties) that vary between species, if any. 
 * Identify homologous structures having ancestors through "part_of" object properties (or any of its subproperties) that vary between species, if any.
 
-* Provide the result in a text format of your choice, allowing an easy retrieval of the relevant information. Highlight the most significant results, if any, in a 1/2 text page. Provide the results on a fork of this project on github. 
+* Provide the results on a fork of this project on github: 
+  * create a new folder `src/` to provide your source code, organized as you see fit.
+  * provide the results in a text format of your choice, allowing an easy retrieval of the relevant information. Highlight the most significant results, if any, in a 1/2 text page. Create a new folder `results/` to store these files. 
