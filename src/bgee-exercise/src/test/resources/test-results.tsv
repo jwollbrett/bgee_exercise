@@ -1,0 +1,5 @@
+entity_id	entity_name	homologous_taxon_name	property_id	property_name	target_entity_id	target_entity_name	taxon_id	taxon_name
+UBERON_0000930	stomodeum	Bilateria	BFO_0000050	part of	UBERON_0001007	digestive system	NCBITaxon_8353	Xenopus <genus>
+UBERON_0000930	stomodeum	Bilateria	BFO_0000050	part of	FBbt_00000438	presumptive embryonic/larval digestive system (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0000930	stomodeum	Bilateria	BFO_0000050	part of	UBERON_0001555	digestive tract	NCBITaxon_7954	Danio
+UBERON_0000930	stomodeum	Bilateria	BFO_0000050	part of	FBbt_00005331	dorsal closure embryo (Drosophila)	NCBITaxon_7227	Drosophila melanogaster

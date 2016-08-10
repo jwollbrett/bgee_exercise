@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration name="BGEE_EXERCISE_PROJECT" status="OFF">
+    <appenders>
+        <RollingFile name="rolling-file" fileName="log/bgee_exercise.log" filePattern="log/$${date:yyyy-MM}/Program-Name-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <pattern>%d{ABSOLUTE} [%t] %-5p %c{1} - %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="6" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+        </RollingFile>
+    </appenders>
+    <loggers>
+        <root level="info">
+            <appender-ref ref="rolling-file"/>
+        </root>
+        <logger name="fr.jwollbrett.lausanne.bgee.exercise" level="info">
+            <appender-ref ref="rolling-file"/>
+        </logger>
+    </loggers>
+</configuration>
