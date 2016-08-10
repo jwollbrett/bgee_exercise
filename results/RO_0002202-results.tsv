@@ -1,0 +1,65 @@
+entity_id	entity_name	homologous_taxon_name	property_id	property_name	target_entity_id	target_entity_name	taxon_id	taxon_name
+UBERON_0001532	internal carotid artery	Vertebrata	RO_0002202	develops_from	UBERON_0003120	pharyngeal arch artery 3	NCBITaxon_9606	Homo sapiens
+UBERON_0001532	internal carotid artery	Vertebrata	RO_0002202	develops_from	UBERON_0005805	dorsal aorta	NCBITaxon_8353	Xenopus <genus>
+UBERON_0002016	pulmonary vein	Sarcopterygii	RO_0002202	develops_from	EHDAA2_0004526	body venous capillary plexus (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0002016	pulmonary vein	Sarcopterygii	RO_0002202	develops_from	UBERON_0001919	endothelium of vein	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001281	hepatic sinusoid	Vertebrata	RO_0002202	develops_from	UBERON_0002107	liver	NCBITaxon_9606	Homo sapiens
+UBERON_0001281	hepatic sinusoid	Vertebrata	RO_0002202	develops_from	UBERON_0011944	subintestinal vein	NCBITaxon_7954	Danio
+UBERON_0000930	stomodeum	Bilateria	RO_0002202	develops_from	FBbt_00005252	stomodeal invagination late (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0000930	stomodeum	Bilateria	RO_0002202	develops_from	XAO_0000032	stomodeal-hypophyseal primordium (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003098	optic stalk	Vertebrata	RO_0002202	develops_from	UBERON_2007031	anterior neural rod	NCBITaxon_7954	Danio
+UBERON_0003098	optic stalk	Vertebrata	RO_0002202	develops_from	EHDAA2_0004111	optic vesicle proximal part (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0003091	thyroid primordium	Chordata	RO_0002202	develops_from	UBERON_0001731	cavity of pharynx	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003091	thyroid primordium	Chordata	RO_0002202	develops_from	UBERON_0005665	3rd arch endoderm	NCBITaxon_9606	Homo sapiens
+UBERON_0003050	olfactory placode	Craniata	RO_0002202	develops_from	UBERON_0002025	stratum basale of epidermis	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003050	olfactory placode	Craniata	RO_0002202	develops_from	UBERON_0000076	external ectoderm	NCBITaxon_9606	Homo sapiens
+UBERON_0003050	olfactory placode	Craniata	RO_0002202	develops_from	UBERON_2007062	olfactory field	NCBITaxon_7954	Danio
+UBERON_0003050	olfactory placode	Craniata	RO_0002202	develops_from	XAO_0004209	anterior neural ridge (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0002108	small intestine	Tetrapoda	RO_0002202	develops_from	ZFA_0005737	intestinal rod (Danio)	NCBITaxon_7954	Danio
+UBERON_0002108	small intestine	Tetrapoda	RO_0002202	develops_from	UBERON_0001045	midgut	NCBITaxon_8353	Xenopus <genus>
+UBERON_0002037	cerebellum	Gnathostomata	RO_0002202	develops_from	UBERON_0009841	upper rhombic lip	NCBITaxon_7954	Danio
+UBERON_0002037	cerebellum	Gnathostomata	RO_0002202	develops_from	UBERON_0009841	upper rhombic lip	NCBITaxon_9606	Homo sapiens
+UBERON_0002037	cerebellum	Gnathostomata	RO_0002202	develops_from	EHDAA2_0004393	early isthmus cerebellar primordium (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0001143	hepatic vein	Vertebrata	RO_0002202	develops_from	UBERON_0005487	vitelline vein	NCBITaxon_40674	Mammalia
+UBERON_0001143	hepatic vein	Vertebrata	RO_0002202	develops_from	UBERON_0001919	endothelium of vein	NCBITaxon_8353	Xenopus <genus>
+UBERON_0002352	atrioventricular node	Vertebrata	RO_0002202	develops_from	EHDAA2_0004166	atrioventricular region heart muscle (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0002352	atrioventricular node	Vertebrata	RO_0002202	develops_from	UBERON_2005073	atrioventricular ring	NCBITaxon_7954	Danio
+UBERON_0001132	parathyroid gland	Tetrapoda	RO_0002202	develops_from	UBERON_0003092	ultimobranchial body	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001132	parathyroid gland	Tetrapoda	RO_0002202	develops_from	UBERON_0007123	pharyngeal pouch 2	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001132	parathyroid gland	Tetrapoda	RO_0002202	develops_from	UBERON_0007125	pharyngeal pouch 4	NCBITaxon_9030	Gallus
+UBERON_0001132	parathyroid gland	Tetrapoda	RO_0002202	develops_from	UBERON_0007125	pharyngeal pouch 4	NCBITaxon_9606	Homo sapiens
+UBERON_0001132	parathyroid gland	Tetrapoda	RO_0002202	develops_from	UBERON_0007124	pharyngeal pouch 3	NCBITaxon_10090	Mus musculus
+UBERON_0001132	parathyroid gland	Tetrapoda	RO_0002202	develops_from	UBERON_0003114	pharyngeal arch 3	NCBITaxon_8353	Xenopus <genus>
+UBERON_0000925	endoderm	Eumetazoa	RO_0002202	develops_from	UBERON_0005439	definitive endoderm	NCBITaxon_9606	Homo sapiens
+UBERON_0000925	endoderm	Eumetazoa	RO_0002202	develops_from	FBbt_00005435	endoderm anlage (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0001701	glossopharyngeal ganglion	Vertebrata	RO_0002202	develops_from	UBERON_0005491	glossopharyngeal neural crest	NCBITaxon_9606	Homo sapiens
+UBERON_0001701	glossopharyngeal ganglion	Vertebrata	RO_0002202	develops_from	UBERON_0009125	petrosal placode	NCBITaxon_9606	Homo sapiens
+UBERON_0001701	glossopharyngeal ganglion	Vertebrata	RO_0002202	develops_from	UBERON_0005491	glossopharyngeal neural crest	NCBITaxon_7954	Danio
+UBERON_0001701	glossopharyngeal ganglion	Vertebrata	RO_0002202	develops_from	UBERON_0009125	petrosal placode	NCBITaxon_7954	Danio
+UBERON_0006283	future cardiac ventricle	Vertebrata	RO_0002202	develops_from	UBERON_2002232	presumptive cardiac ventricle primitive heart tube	NCBITaxon_7954	Danio
+UBERON_0006283	future cardiac ventricle	Vertebrata	RO_0002202	develops_from	EHDAA2_0000426	primitive heart tube endocardium (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0002348	epicardium	Vertebrata	RO_0002202	develops_from	EHDAA2_0001533	primitive heart tube visceral pericardium (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0002348	epicardium	Vertebrata	RO_0002202	develops_from	XAO_0004482	epicardial precursor cell (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0002348	epicardium	Vertebrata	RO_0002202	develops_from	EHDAA2_0001831	septum transversum mesenchyme (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0001264	pancreas	Craniata	RO_0002202	develops_from	UBERON_0003922	pancreatic epithelial bud	NCBITaxon_7954	Danio
+UBERON_0001264	pancreas	Craniata	RO_0002202	develops_from	UBERON_0003924	ventral pancreatic bud	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001264	pancreas	Craniata	RO_0002202	develops_from	UBERON_0003923	dorsal pancreatic bud	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001072	posterior vena cava	Tetrapoda	RO_0002202	develops_from	UBERON_0005487	vitelline vein	NCBITaxon_40674	Mammalia
+UBERON_0001072	posterior vena cava	Tetrapoda	RO_0002202	develops_from	UBERON_0001143	hepatic vein	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001072	posterior vena cava	Tetrapoda	RO_0002202	develops_from	XAO_0000386	interrenal vein (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003092	ultimobranchial body	Vertebrata	RO_0002202	develops_from	UBERON_0010028	ventral part of pharyngeal pouch 4	NCBITaxon_10088	Mus <mouse, genus>
+UBERON_0003092	ultimobranchial body	Vertebrata	RO_0002202	develops_from	UBERON_0003117	pharyngeal arch 6	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003092	ultimobranchial body	Vertebrata	RO_0002202	develops_from	UBERON_0007126	pharyngeal pouch 5	NCBITaxon_9606	Homo sapiens
+UBERON_0003092	ultimobranchial body	Vertebrata	RO_0002202	develops_from	UBERON_0007127	pharyngeal pouch 6	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003068	axial mesoderm	Chordata	RO_0002202	develops_from	XAO_0004406	presumptive axial mesoderm (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003068	axial mesoderm	Chordata	RO_0002202	develops_from	UBERON_2001378	axial hypoblast	NCBITaxon_7954	Danio
+UBERON_0000178	blood	Metazoa	RO_0002202	develops_from	UBERON_0003304	mesoderm blood island	NCBITaxon_9606	Homo sapiens
+UBERON_0000178	blood	Metazoa	RO_0002202	develops_from	UBERON_0006293	spleen primordium	NCBITaxon_9606	Homo sapiens
+UBERON_0000178	blood	Metazoa	RO_0002202	develops_from	XAO_0004144	anterior ventral blood island (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0000178	blood	Metazoa	RO_0002202	develops_from	UBERON_0002107	liver	NCBITaxon_9606	Homo sapiens
+UBERON_0003846	thymus epithelium	Vertebrata	RO_0002202	develops_from	EHDAA2_0002025	thymus primordium epithelium (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0003846	thymus epithelium	Vertebrata	RO_0002202	develops_from	UBERON_0010026	ventral part of pharyngeal pouch 3	NCBITaxon_40674	Mammalia
+UBERON_0003070	trigeminal placode complex	Vertebrata	RO_0002202	develops_from	UBERON_0000076	external ectoderm	NCBITaxon_9606	Homo sapiens
+UBERON_0003070	trigeminal placode complex	Vertebrata	RO_0002202	develops_from	UBERON_0003067	dorsolateral placode	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003078	epibranchial placode	Vertebrata	RO_0002202	develops_from	UBERON_2007061	epibranchial field	NCBITaxon_7954	Danio
+UBERON_0003078	epibranchial placode	Vertebrata	RO_0002202	develops_from	UBERON_0003067	dorsolateral placode	NCBITaxon_8353	Xenopus <genus>

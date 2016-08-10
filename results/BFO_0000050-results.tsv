@@ -1,0 +1,67 @@
+entity_id	entity_name	homologous_taxon_name	property_id	property_name	target_entity_id	target_entity_name	taxon_id	taxon_name
+UBERON_0002268	olfactory organ	Vertebrata	BFO_0000050	part of	FBbt_00007688	olfactory system (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0002268	olfactory organ	Vertebrata	BFO_0000050	part of	UBERON_0005725	olfactory system	NCBITaxon_8353	Xenopus <genus>
+UBERON_0002120	pronephros	Vertebrata	BFO_0000050	part of	UBERON_0002323	coelemic cavity lumen	NCBITaxon_7954	Danio
+UBERON_0002120	pronephros	Vertebrata	BFO_0000050	part of	XAO_0004521	coelom (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0000930	stomodeum	Bilateria	BFO_0000050	part of	UBERON_0001007	digestive system	NCBITaxon_8353	Xenopus <genus>
+UBERON_0000930	stomodeum	Bilateria	BFO_0000050	part of	UBERON_0001555	digestive tract	NCBITaxon_7954	Danio
+UBERON_0000930	stomodeum	Bilateria	BFO_0000050	part of	FBbt_00000438	presumptive embryonic/larval digestive system (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0000930	stomodeum	Bilateria	BFO_0000050	part of	FBbt_00005331	dorsal closure embryo (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0000107	cleavage stage	Bilateria	BFO_0000050	part of	HsapDv_0000002	embryonic human stage (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0000107	cleavage stage	Bilateria	BFO_0000050	part of	MmusDv_0000002	embryonic mouse stage (mouse)	NCBITaxon_10090	Mus musculus
+UBERON_0000107	cleavage stage	Bilateria	BFO_0000050	part of	RnorDv_0000003	embryonic stage (rat)	NCBITaxon_10116	Rattus norvegicus
+UBERON_0001091	calcareous tooth	Vertebrata	BFO_0000050	part of	UBERON_0010323	cranial skeletal system	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001091	calcareous tooth	Vertebrata	BFO_0000050	part of	UBERON_0011595	jaw region	NCBITaxon_32523	Tetrapoda
+UBERON_0001091	calcareous tooth	Vertebrata	BSPO_0000126	in_lateral_side_of	UBERON_0011595	jaw region	NCBITaxon_9606	Homo sapiens
+UBERON_0003055	periderm	Amniota	BFO_0000050	part of	UBERON_0001003	skin epidermis	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003055	periderm	Amniota	BFO_0000050	part of	UBERON_0000924	ectoderm	NCBITaxon_7954	Danio
+UBERON_0000941	cranial nerve II	Craniata	BFO_0000050	part of	UBERON_0003931	diencephalic white matter	NCBITaxon_7954	Danio
+UBERON_0000941	cranial nerve II	Craniata	BFO_0000050	part of	UBERON_0000019	camera-type eye	NCBITaxon_8353	Xenopus <genus>
+UBERON_0005493	hyoid muscle	Euteleostomi	BFO_0000050	part of	UBERON_0003066	pharyngeal arch 2	NCBITaxon_7954	Danio
+UBERON_0005493	hyoid muscle	Euteleostomi	BFO_0000050	part of	UBERON_0004465	musculature of neck	NCBITaxon_32523	Tetrapoda
+UBERON_0002065	posterior cardinal vein	Vertebrata	BFO_0000050	part of	XAO_0004423	trunk vasculature (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0002065	posterior cardinal vein	Vertebrata	BFO_0000050	part of	UBERON_2000096	cardinal system	NCBITaxon_7954	Danio
+UBERON_0002065	posterior cardinal vein	Vertebrata	BFO_0000050	part of	UBERON_2005295	axial blood vessel	NCBITaxon_7954	Danio
+UBERON_0000165	mouth	Bilateria	BFO_0000050	part of	FBbt_00100322	adult alimentary canal (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0000165	mouth	Bilateria	BFO_0000050	part of	UBERON_0000165	mouth	NCBITaxon_7954	Danio
+UBERON_0000106	zygote stage	Metazoa	BFO_0000050	part of	FBdv_00005286	egg stage	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0000106	zygote stage	Metazoa	BFO_0000050	part of	MmusDv_0000002	embryonic mouse stage (mouse)	NCBITaxon_10090	Mus musculus
+UBERON_0000106	zygote stage	Metazoa	BFO_0000050	part of	RnorDv_0000003	embryonic stage (rat)	NCBITaxon_10116	Rattus norvegicus
+UBERON_0000106	zygote stage	Metazoa	BFO_0000050	part of	HsapDv_0000002	embryonic human stage (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0000931	proctodeum	Bilateria	BFO_0000050	part of	UBERON_0001007	digestive system	NCBITaxon_8353	Xenopus <genus>
+UBERON_0000931	proctodeum	Bilateria	BFO_0000050	part of	UBERON_0001555	digestive tract	NCBITaxon_7954	Danio
+UBERON_0000931	proctodeum	Bilateria	BFO_0000050	part of	UBERON_0004734	gastrula	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0001032	sensory system	Chordata	BFO_0000050	part of	UBERON_0001016	nervous system	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001032	sensory system	Chordata	BFO_0000050	part of	UBERON_0001016	nervous system	NCBITaxon_7954	Danio
+UBERON_0001032	sensory system	Chordata	BFO_0000050	part of	FBbt_00001134	presumptive embryonic/larval peripheral nervous system (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0000991	gonad	Vertebrata	BFO_0000050	part of	WBbt_0005744	reproductive tract (C elegans)	NCBITaxon_6237	Caenorhabditis
+UBERON_0000991	gonad	Vertebrata	BFO_0000050	part of	UBERON_2002224	pleuroperitoneal cavity	NCBITaxon_7954	Danio
+UBERON_0002346	neurectoderm	Metazoa	BFO_0000050	part of	UBERON_0000924	ectoderm	NCBITaxon_7954	Danio
+UBERON_0002346	neurectoderm	Metazoa	BFO_0000050	part of	UBERON_0000924	ectoderm	NCBITaxon_8353	Xenopus <genus>
+UBERON_0002346	neurectoderm	Metazoa	BFO_0000050	part of	FBbt_00005558	ventral ectoderm (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
+UBERON_0004117	pharyngeal pouch	Chordata	BFO_0000050	part of	XAO_0004261	pharyngeal region (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0004117	pharyngeal pouch	Chordata	BFO_0000050	part of	UBERON_0002539	pharyngeal arch	NCBITaxon_7954	Danio
+UBERON_0005805	dorsal aorta	Vertebrata	BFO_0000050	part of	UBERON_2005295	axial blood vessel	NCBITaxon_7954	Danio
+UBERON_0005805	dorsal aorta	Vertebrata	BFO_0000050	part of	XAO_0004423	trunk vasculature (Xenopus)	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001008	renal system	Bilateria	BFO_0000050	part of	WBbt_0006850	excretory secretory system (C elegans)	NCBITaxon_6237	Caenorhabditis
+UBERON_0001008	renal system	Bilateria	BFO_0000050	part of	UBERON_0004122	genitourinary system	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001840	semicircular canal	Theria	BFO_0000050	part of	UBERON_0001839	bony labyrinth	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001840	semicircular canal	Theria	BFO_0000050	part of	UBERON_2005409	pars superior ear	NCBITaxon_7954	Danio
+UBERON_0003082	myotome	Vertebrata	BFO_0000050	part of	UBERON_0002329	somite	NCBITaxon_8353	Xenopus <genus>
+UBERON_0003082	myotome	Vertebrata	BFO_0000050	part of	UBERON_0001774	skeletal muscle of trunk	NCBITaxon_7954	Danio
+UBERON_0000109	gastrula stage	Bilateria	BFO_0000050	part of	HsapDv_0000002	embryonic human stage (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0000109	gastrula stage	Bilateria	BFO_0000050	part of	MmusDv_0000002	embryonic mouse stage (mouse)	NCBITaxon_10090	Mus musculus
+UBERON_0000109	gastrula stage	Bilateria	BFO_0000050	part of	WBls_0000004	proliferating embryo Ce (C elegans)	NCBITaxon_6237	Caenorhabditis
+UBERON_0000109	gastrula stage	Bilateria	BFO_0000050	part of	RnorDv_0000003	embryonic stage (rat)	NCBITaxon_10116	Rattus norvegicus
+UBERON_0000473	testis	Vertebrata	BSPO_0000126	in_lateral_side_of	UBERON_0000468	multicellular organism	NCBITaxon_7742	Vertebrata <Metazoa>
+UBERON_0000473	testis	Vertebrata	BFO_0000050	part of	UBERON_0000949	endocrine system	NCBITaxon_7954	Danio
+UBERON_0004747	supraoccipital bone	Vertebrata	BFO_0000050	part of	UBERON_0004339	vault of skull	NCBITaxon_7954	Danio
+UBERON_0004747	supraoccipital bone	Vertebrata	BFO_0000050	part of	UBERON_0001676	occipital bone	NCBITaxon_40674	Mammalia
+UBERON_0000992	female gonad	Vertebrata	BSPO_0000126	in_lateral_side_of	UBERON_0003975	internal female genitalia	NCBITaxon_40674	Mammalia
+UBERON_0000992	female gonad	Vertebrata	BFO_0000050	part of	UBERON_0000949	endocrine system	NCBITaxon_7954	Danio
+UBERON_0001905	pineal body	Vertebrata	BFO_0000050	part of	UBERON_0002104	visual system	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001905	pineal body	Vertebrata	BFO_0000050	part of	UBERON_0001891	midbrain	NCBITaxon_8353	Xenopus <genus>
+UBERON_0001905	pineal body	Vertebrata	BFO_0000050	part of	UBERON_0002104	visual system	NCBITaxon_7954	Danio
+UBERON_0000111	organogenesis stage	Bilateria	BFO_0000050	part of	MmusDv_0000002	embryonic mouse stage (mouse)	NCBITaxon_10090	Mus musculus
+UBERON_0000111	organogenesis stage	Bilateria	BFO_0000050	part of	HsapDv_0000002	embryonic human stage (human)	NCBITaxon_9606	Homo sapiens
+UBERON_0000111	organogenesis stage	Bilateria	BFO_0000050	part of	RnorDv_0000003	embryonic stage (rat)	NCBITaxon_10116	Rattus norvegicus
