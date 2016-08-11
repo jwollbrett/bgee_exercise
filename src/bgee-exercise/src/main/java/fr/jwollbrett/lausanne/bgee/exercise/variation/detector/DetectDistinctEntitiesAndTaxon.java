@@ -14,9 +14,10 @@ import fr.jwollbrett.lausanne.bgee.exercise.bean.RelationsWithPropertyAndGCIFill
 import fr.jwollbrett.lausanne.bgee.exercise.ontology.extractor.RetrieveLabel;
 
 public class DetectDistinctEntitiesAndTaxon {
-	
-	public static List<OutputFileBean> distinctEntitiesAndTaxon(OWLOntology ontology,List<DetectHomologyEntitiesBean> structuresWithAncestorsThroughProperties){
-		List<OutputFileBean> outputFilesBeanList=new ArrayList<OutputFileBean>();
+
+	public static List<OutputFileBean> distinctEntitiesAndTaxon(OWLOntology ontology,
+			List<DetectHomologyEntitiesBean> structuresWithAncestorsThroughProperties) {
+		List<OutputFileBean> outputFilesBeanList = new ArrayList<OutputFileBean>();
 		for (DetectHomologyEntitiesBean structuresWithAncestorsThroughProperty : structuresWithAncestorsThroughProperties) {
 			String propertyId = structuresWithAncestorsThroughProperty.getPropertyId();
 			Set<HomoStructWithAncestorsBean> distinctResults = new HashSet<HomoStructWithAncestorsBean>(
@@ -25,23 +26,28 @@ public class DetectDistinctEntitiesAndTaxon {
 			for (HomoStructWithAncestorsBean homoStruct : distinctResults) {
 				Set<RelationsWithPropertyAndGCIFillerBean> distinctPropertiesForSameAnnotation = homoStruct
 						.getRelations();
-				if (distinctPropertiesForSameAnnotation.size() > 1 && homoStruct.getNumberOfDifferentAncestors() > 1
+				// test presence of more than one species and more than one different ancestor
+				if (homoStruct.getNumberOfDifferentAncestors() > 1
 						&& homoStruct.getNumberOfDifferentSpecies() > 1) {
-					for (RelationsWithPropertyAndGCIFillerBean bean : distinctPropertiesForSameAnnotation) {
-						OutputLineBean outputLine = new OutputLineBean();
-						outputLine.setHomologousEntityId(bean.getHomologousStructure().getIRI().getShortForm());
-						outputLine.setHomologousentityName(RetrieveLabel
-								.retrieveLabelFromIRI(bean.getHomologousStructure().getIRI(), ontology));
-						outputLine.setPropertyId(bean.getProperty().getProperty().getIRI().getShortForm());
-						outputLine.setPropertyName(RetrieveLabel
-								.retrieveLabelFromIRI(bean.getProperty().getProperty().getIRI(), ontology));
-						outputLine.setTargetId(bean.getTargetStructure().getIRI().getShortForm());
-						outputLine.setTargetName(
-								RetrieveLabel.retrieveLabelFromIRI(bean.getTargetStructure().getIRI(), ontology));
-						outputLine.setTaxonId(bean.getGciFillerTaxon().getIRI().getShortForm());
-						outputLine.setTaxonName(
-								RetrieveLabel.retrieveLabelFromIRI(bean.getGciFillerTaxon().getIRI(), ontology));
-						outputLinesBean.add(outputLine);
+					//test that both ancestors are not the same for different species and different species don't annotate same ancestors
+					if (homoStruct.getNumberOfDifferentAncestors()
+							* homoStruct.getNumberOfDifferentSpecies() != distinctPropertiesForSameAnnotation.size()) {
+						for (RelationsWithPropertyAndGCIFillerBean bean : distinctPropertiesForSameAnnotation) {
+							OutputLineBean outputLine = new OutputLineBean();
+							outputLine.setHomologousEntityId(bean.getHomologousStructure().getIRI().getShortForm());
+							outputLine.setHomologousentityName(RetrieveLabel
+									.retrieveLabelFromIRI(bean.getHomologousStructure().getIRI(), ontology));
+							outputLine.setPropertyId(bean.getProperty().getProperty().getIRI().getShortForm());
+							outputLine.setPropertyName(RetrieveLabel
+									.retrieveLabelFromIRI(bean.getProperty().getProperty().getIRI(), ontology));
+							outputLine.setTargetId(bean.getTargetStructure().getIRI().getShortForm());
+							outputLine.setTargetName(
+									RetrieveLabel.retrieveLabelFromIRI(bean.getTargetStructure().getIRI(), ontology));
+							outputLine.setTaxonId(bean.getGciFillerTaxon().getIRI().getShortForm());
+							outputLine.setTaxonName(
+									RetrieveLabel.retrieveLabelFromIRI(bean.getGciFillerTaxon().getIRI(), ontology));
+							outputLinesBean.add(outputLine);
+						}
 					}
 				}
 			}

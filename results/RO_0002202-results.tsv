@@ -32,10 +32,6 @@ UBERON_0001132	parathyroid gland	Tetrapoda	RO_0002202	develops_from	UBERON_00071
 UBERON_0001132	parathyroid gland	Tetrapoda	RO_0002202	develops_from	UBERON_0003114	pharyngeal arch 3	NCBITaxon_8353	Xenopus <genus>
 UBERON_0000925	endoderm	Eumetazoa	RO_0002202	develops_from	UBERON_0005439	definitive endoderm	NCBITaxon_9606	Homo sapiens
 UBERON_0000925	endoderm	Eumetazoa	RO_0002202	develops_from	FBbt_00005435	endoderm anlage (Drosophila)	NCBITaxon_7227	Drosophila melanogaster
-UBERON_0001701	glossopharyngeal ganglion	Vertebrata	RO_0002202	develops_from	UBERON_0005491	glossopharyngeal neural crest	NCBITaxon_9606	Homo sapiens
-UBERON_0001701	glossopharyngeal ganglion	Vertebrata	RO_0002202	develops_from	UBERON_0009125	petrosal placode	NCBITaxon_9606	Homo sapiens
-UBERON_0001701	glossopharyngeal ganglion	Vertebrata	RO_0002202	develops_from	UBERON_0005491	glossopharyngeal neural crest	NCBITaxon_7954	Danio
-UBERON_0001701	glossopharyngeal ganglion	Vertebrata	RO_0002202	develops_from	UBERON_0009125	petrosal placode	NCBITaxon_7954	Danio
 UBERON_0006283	future cardiac ventricle	Vertebrata	RO_0002202	develops_from	UBERON_2002232	presumptive cardiac ventricle primitive heart tube	NCBITaxon_7954	Danio
 UBERON_0006283	future cardiac ventricle	Vertebrata	RO_0002202	develops_from	EHDAA2_0000426	primitive heart tube endocardium (human)	NCBITaxon_9606	Homo sapiens
 UBERON_0002348	epicardium	Vertebrata	RO_0002202	develops_from	EHDAA2_0001533	primitive heart tube visceral pericardium (human)	NCBITaxon_9606	Homo sapiens
