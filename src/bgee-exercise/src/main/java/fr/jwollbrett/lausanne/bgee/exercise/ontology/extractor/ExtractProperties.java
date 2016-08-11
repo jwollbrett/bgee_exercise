@@ -9,8 +9,19 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLPropertyExpression;
 import org.semanticweb.owlapi.model.OWLSubObjectPropertyOfAxiom;
 
+/**
+ * Extract object properties of an ontology
+ * @author Kobe70
+ *
+ */
 public class ExtractProperties {
 	
+	/**
+	 * Extract all subproperties of a selected object property used in the ontology
+	 * @param property	property you want to find subproperties
+	 * @param ontology	ontology you want to use to find subproperties
+	 * @return	The selected property and all its subproperties
+	 */
 	public static Set<OWLPropertyExpression> extractAllSubProp(OWLObjectProperty property,OWLOntology ontology){
 		Set<OWLPropertyExpression> allSubProperties = new HashSet<OWLPropertyExpression>();
 		allSubProperties.add(property);

@@ -13,8 +13,27 @@ import fr.jwollbrett.lausanne.bgee.exercise.bean.OutputLineBean;
 import fr.jwollbrett.lausanne.bgee.exercise.bean.RelationsWithPropertyAndGCIFillerBean;
 import fr.jwollbrett.lausanne.bgee.exercise.ontology.extractor.RetrieveLabel;
 
+/**
+ * @author jwollbrett
+ *
+ */
 public class DetectDistinctEntitiesAndTaxon {
 
+	/**
+	 * Detect homologous structures having ancestors through one object
+	 * properties (or any of its subproperties) that vary between species
+	 * 
+	 * @param ontology
+	 *            {@code OWLOntology} ontology
+	 * @param structuresWithAncestorsThroughProperties
+	 *            relations with an object property or any of its
+	 *            sub-properties, outgoing from anatomical entities present in
+	 *            similarity annotation file coming from bgee
+	 * @return a {@code List} of {@code OutputFileBean} corresponding to
+	 *         homologous structures having ancestors through one object
+	 *         properties (or any of its subproperties) that vary between
+	 *         species
+	 */
 	public static List<OutputFileBean> distinctEntitiesAndTaxon(OWLOntology ontology,
 			List<DetectHomologyEntitiesBean> structuresWithAncestorsThroughProperties) {
 		List<OutputFileBean> outputFilesBeanList = new ArrayList<OutputFileBean>();
@@ -26,10 +45,12 @@ public class DetectDistinctEntitiesAndTaxon {
 			for (HomoStructWithAncestorsBean homoStruct : distinctResults) {
 				Set<RelationsWithPropertyAndGCIFillerBean> distinctPropertiesForSameAnnotation = homoStruct
 						.getRelations();
-				// test presence of more than one species and more than one different ancestor
-				if (homoStruct.getNumberOfDifferentAncestors() > 1
-						&& homoStruct.getNumberOfDifferentSpecies() > 1) {
-					//test that both ancestors are not the same for different species and different species don't annotate same ancestors
+				// test presence of more than one species and more than one
+				// different ancestor
+				if (homoStruct.getNumberOfDifferentAncestors() > 1 && homoStruct.getNumberOfDifferentSpecies() > 1) {
+					// test that both ancestors are not the same for different
+					// species and different species don't annotate same
+					// ancestors
 					if (homoStruct.getNumberOfDifferentAncestors()
 							* homoStruct.getNumberOfDifferentSpecies() != distinctPropertiesForSameAnnotation.size()) {
 						for (RelationsWithPropertyAndGCIFillerBean bean : distinctPropertiesForSameAnnotation) {

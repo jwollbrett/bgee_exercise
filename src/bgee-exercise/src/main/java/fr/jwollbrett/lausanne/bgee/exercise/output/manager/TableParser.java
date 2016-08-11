@@ -8,6 +8,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import org.apache.log4j.Logger;
 
+/**
+ * Class allowing to parse tabulate files
+ * @author Kobe70
+ *
+ */
 public class TableParser {
 	
 	private static Logger LOGGER=Logger.getLogger(TableParser.class);
@@ -33,6 +38,11 @@ public class TableParser {
 		readColumnLabels();
 	}
 	
+	/**
+	 * Parse one line of a table file
+	 * @return a {@code Collection} of {@code TableCellBean}
+	 * @throws IOException
+	 */
 	public Collection<TableCellBean> parseLine() throws IOException {
 		
 		if (currentLineNumber == -1) {

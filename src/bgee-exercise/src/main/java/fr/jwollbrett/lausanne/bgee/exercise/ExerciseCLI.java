@@ -35,10 +35,18 @@ import fr.jwollbrett.lausanne.bgee.exercise.variation.detector.DetectDistinctEnt
 import fr.jwollbrett.lausanne.bgee.exercise.variation.detector.DetectHomologyEntities;
 import fr.jwollbrett.lausanne.bgee.exercise.variation.detector.DetectHomologyEntitiesBean;
 
+/**
+ * Class that contains the main method you need to use to persist files with
+ * homologous structures having ancestors through select object properties (or
+ * any of its subproperties) that vary between species
+ * 
+ * @author Kobe70
+ *
+ */
 public class ExerciseCLI {
 
 	private static final Logger LOGGER = Logger.getLogger(ExerciseCLI.class);
-	private static String OUTPUT_FILE_SUFFIX="-results.tsv";
+	private static String OUTPUT_FILE_SUFFIX = "-results.tsv";
 	private static Options options;
 
 	static {
@@ -54,6 +62,18 @@ public class ExerciseCLI {
 		options.addOption("l", "location", true, "location repository where you want to creat output file(s)");
 	}
 
+	/**
+	 * Main metthod allowing to to persist files with homologous structures
+	 * having ancestors through select object properties (or any of its
+	 * subproperties) that vary between species
+	 * 
+	 * @param args
+	 *            arguments of the main methods. Use -h argument to show list of
+	 *            available arguments
+	 * @throws FileNotFoundException
+	 * @throws IllegalArgumentException
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws FileNotFoundException, IllegalArgumentException, IOException {
 		CommandLineParser parser = new PosixParser();
 		String annotationFilePath = null;
@@ -138,12 +158,14 @@ public class ExerciseCLI {
 				OWLObjectProperty property = OWLManager.createOWLOntologyManager().getOWLDataFactory()
 						.getOWLObjectProperty(IRI.create(propertyId));
 				Set<OWLPropertyExpression> propertyAndSubProp = ExtractProperties.extractAllSubProp(property, ontology);
-				propertiesAndSubProp.add(new ExtractPropertiesBean(property.getIRI().getShortForm(), propertyAndSubProp));
-				LOGGER.debug(
-						"number of property and subproperties for " + property.getIRI().getShortForm() + " : " + propertyAndSubProp.size());
+				propertiesAndSubProp
+						.add(new ExtractPropertiesBean(property.getIRI().getShortForm(), propertyAndSubProp));
+				LOGGER.debug("number of property and subproperties for " + property.getIRI().getShortForm() + " : "
+						+ propertyAndSubProp.size());
 			}
 
-			// Keep only graph edges for owlclasses with homology annotations AND selected properties (and these subproperties)
+			// Keep only graph edges for owlclasses with homology annotations
+			// AND selected properties (and these subproperties)
 			List<DetectHomologyEntitiesBean> structuresWithAncestorsThroughProperties = new ArrayList<DetectHomologyEntitiesBean>();
 			for (ExtractPropertiesBean propertyAndSubProp : propertiesAndSubProp) {
 				String propertyId = propertyAndSubProp.getPropertyId();
@@ -157,13 +179,16 @@ public class ExerciseCLI {
 						+ propertyId + " and subproperties : " + structuresWithAncestorsThroughProperty.size());
 			}
 
-			//Identify homologous structures having ancestors through  selected object properties (or any of its subproperties) that vary between species,
-			List<OutputFileBean> outputFilesBean = DetectDistinctEntitiesAndTaxon.distinctEntitiesAndTaxon(ontology, structuresWithAncestorsThroughProperties);
-			
-			//write result files
+			// Identify homologous structures having ancestors through selected
+			// object properties (or any of its subproperties) that vary between
+			// species,
+			List<OutputFileBean> outputFilesBean = DetectDistinctEntitiesAndTaxon.distinctEntitiesAndTaxon(ontology,
+					structuresWithAncestorsThroughProperties);
+
+			// write result files
 			for (OutputFileBean outputFileBean : outputFilesBean) {
-				String filePath = outputRepositoryPath +File.separator+outputFileBean.getPropertyId()
-						+OUTPUT_FILE_SUFFIX;
+				String filePath = outputRepositoryPath + File.separator + outputFileBean.getPropertyId()
+						+ OUTPUT_FILE_SUFFIX;
 				OutputFileUtils.persistOutputFile(filePath, outputFileBean.getOutputLinesBean(), annotationsMapById);
 				//
 				// List<OutputFileBean> outputData =
