@@ -1,3 +1,16 @@
+## Part_of metrics
+Using part_of property (and subproperties) we found 258 ancestors of homology annotations. 66 of them contained variations (~25%).
+Mainly found cluster of species:
+- Homo sapiens, Rattus norvegicus, Mus musculus
+- Danio, Xenopus, Drosophila melanogaster
+over represented species : Danio, Xenopus (~50%)
+rarely represented species : C. elegans
+## Develop_from metrics
+Using developed_from property (and subproperties) we found 419 ancestors for homology annotations. 60 of them containend variations (~14%).
+Mainly found cluster of species : none
+Over represented species : Danio, Xenopus, Homo sapiens (~90%)
+rarely represented species : Mus musculus, Gallus, Drosophila melanogaster
+
 ## Results
 In the result files we can distinginsh 3 different kind of homologous structures having ancestors through object properties (or any of its subproperties) that vary between species :
 * homologous structures having different ancestors through properties and coming from species outside of the homology
