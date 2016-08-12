@@ -7,7 +7,7 @@ Using part_of property (and subproperties) we found 258 ancestors of homology an
 * Rarely represented species : C. elegans
 
 ## Develop_from metrics
-Using developed_from property (and subproperties) we found 419 ancestors for homology annotations. 60 of them containend variations (~14%).
+Using developed_from property (and subproperties) we found 419 ancestors for homology annotations. 60 of them contained variations (~14%).
 * Over represented species : Danio, Xenopus, Homo sapiens (~90%)
 * Rarely represented species : Mus musculus, Gallus, Drosophila melanogaster
 
