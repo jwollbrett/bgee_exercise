@@ -1,10 +1,11 @@
 ## Part_of metrics
 Using part_of property (and subproperties) we found 258 ancestors of homology annotations. 66 of them contained variations (~25%).
-Mainly found cluster of species:
+* Mainly found cluster of species:
 - Homo sapiens, Rattus norvegicus, Mus musculus
 - Danio, Xenopus, Drosophila melanogaster
-over represented species : Danio, Xenopus (~50%)
-rarely represented species : C. elegans
+* over represented species : Danio, Xenopus (~50%)
+* rarely represented species : C. elegans
+
 ## Develop_from metrics
 Using developed_from property (and subproperties) we found 419 ancestors for homology annotations. 60 of them containend variations (~14%).
 Mainly found cluster of species : none
