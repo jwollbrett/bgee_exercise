@@ -52,7 +52,7 @@ public class DetectDistinctEntitiesAndTaxon {
 					// species and different species don't annotate same
 					// ancestors
 					if (homoStruct.getNumberOfDifferentAncestors()
-							* homoStruct.getNumberOfDifferentSpecies() != distinctPropertiesForSameAnnotation.size()) {
+							* homoStruct.getNumberOfDifferentSpecies() == distinctPropertiesForSameAnnotation.size()) {
 						for (RelationsWithPropertyAndGCIFillerBean bean : distinctPropertiesForSameAnnotation) {
 							OutputLineBean outputLine = new OutputLineBean();
 							outputLine.setHomologousEntityId(bean.getHomologousStructure().getIRI().getShortForm());
